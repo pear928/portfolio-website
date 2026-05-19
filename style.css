@@ -145,6 +145,11 @@ main {
 /* page-header section-label sits inside padding, no extra top gap needed */
 .page-header .section-label { margin-bottom: 0.4rem; }
 
+/* section-label after entries needs breathing room above */
+.award-entry + .section-label,
+.entry + .section-label,
+.feature-entry + .section-label { margin-top: 2rem; }
+
 /* ── HEADINGS ── */
 h1 {
   font-family: 'DM Serif Display', serif;
