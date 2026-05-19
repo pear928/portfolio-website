@@ -17,8 +17,8 @@
 
 /* ── DARK MODE (H2: parchment dusk + coral-orange) ── */
 [data-theme="dark"] {
-  --bg: #1c1916;
-  --bg-surface: #232019;
+  --bg: #141210;
+  --bg-surface: #1c1916;
   --border: #2a2520;
   --text: #f2ede4;
   --muted: #80796f;
