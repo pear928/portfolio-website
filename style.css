@@ -127,20 +127,23 @@ main {
 .divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 1.5rem;
 }
 
 /* ── SECTION LABEL (glowing subheader) ── */
 .section-label {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
   text-shadow: 0 0 16px var(--accent-glow);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
   transition: text-shadow 0.3s, color 0.3s;
 }
+
+/* page-header section-label sits inside padding, no extra top gap needed */
+.page-header .section-label { margin-bottom: 0.4rem; }
 
 /* ── HEADINGS ── */
 h1 {
@@ -261,8 +264,7 @@ a:hover { color: var(--accent-bright); }
 
 /* ── PAGE HEADER ── */
 .page-header {
-  padding: 3.5rem 0 2.5rem;
-  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 0 2rem;
   margin-bottom: 0;
 }
 .page-header p { max-width: 520px; margin-top: 0.6rem; }

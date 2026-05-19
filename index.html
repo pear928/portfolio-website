@@ -6,6 +6,28 @@
   <title>Param Raval</title>
   <link rel="stylesheet" href="style.css" />
   <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+  <style>
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 3rem;
+      align-items: center;
+      padding: 5rem 0 2rem;
+    }
+    .hero-portrait {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .hero-inner { grid-template-columns: 1fr; padding: 3rem 0 1.5rem; }
+      .hero-portrait { width: 140px; height: 140px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -27,17 +49,19 @@
 
 <main>
 
-  <section class="hero">
-    <span class="eyebrow">Param Raval — San Jose, CA</span>
-    <h1>AI safety researcher,<br><em>debater, community builder.</em></h1>
-    <div class="hero-body">
-      <p>I'm a junior at Archbishop Mitty High School working at the intersection of AI safety, democratic deliberation, and public education. I research how to make AI systems more transparent, aligned, and accountable — and I work to make sure those conversations reach people outside academia too.</p>
-      <p>Currently a researcher at Stanford, Cambridge, and UCSC — and the founder of The AI Compass, a nonprofit that has educated ~400 Bay Area residents on navigating AI safely.</p>
+  <section class="hero-inner">
+    <div>
+      <span class="eyebrow">Param Raval — Bay Area, CA</span>
+      <h1>AI safety researcher,<br><em>debater, community builder.</em></h1>
+      <div class="hero-body">
+        <p>I'm a junior at Archbishop Mitty High School working at the intersection of AI safety, democratic deliberation, and public education. I research how to make AI systems more transparent, aligned, and accountable — and I work to make sure those conversations reach people outside academia too.</p>
+        <p>Currently a researcher at Stanford, Cambridge, and UCSC — and the founder of The AI Compass, a nonprofit that has educated ~400 Bay Area residents on navigating AI safely.</p>
+      </div>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="research.html">See my research</a>
+      </div>
     </div>
-    <div class="hero-links">
-      <a class="btn btn-primary" href="research.html">See my research</a>
-      <a class="btn btn-ghost" href="mailto:param.928@gmail.com">Get in touch</a>
-    </div>
+    <img src="param-portrait.jpg" alt="Param Raval" class="hero-portrait" />
   </section>
 
   <hr class="divider" />
@@ -49,7 +73,6 @@
     <div class="entry-body">
       <h3>Researcher, Stanford Deliberative Democracy Lab</h3>
       <p>Paid research assistant overseeing 20+ member deliberations about frontier AI and its social impacts. Building an AI-based fact-checker to analyze the quality and reliability of democratic discourse.</p>
-      <span class="tag">Research</span>
     </div>
   </div>
 
@@ -58,7 +81,6 @@
     <div class="entry-body">
       <h3>Founder, The AI Compass</h3>
       <p>Founded a nonprofit educating Bay Area residents on AI safety and literacy. ~400 people reached; partnered with Sunnyvale School District and advising their AI Task Force on district-level AI integration strategy.</p>
-      <span class="tag">Community</span>
     </div>
   </div>
 
@@ -67,7 +89,6 @@
     <div class="entry-body">
       <h3>Vice President, Mitty Speech & Debate</h3>
       <p>Ranked 2nd in California and #18 nationally in Lincoln-Douglas Debate. Mentoring 180 students and leading the team that placed 1st in California.</p>
-      <span class="tag">Leadership</span>
     </div>
   </div>
 
@@ -76,19 +97,18 @@
     <div class="entry-body">
       <h3>ICLR Paper Submission — Algoverse AI Research</h3>
       <p>Leading author on an empirical research paper on real-time interpretation of AI agents for transparency and safety, submitted to the International Conference on Learning Representations.</p>
-      <span class="tag">Publication</span>
     </div>
   </div>
 
   <hr class="divider" />
 
   <div class="section-label">About</div>
-  <p>I'm a junior in San Jose. My work sits at the intersection of AI safety research, public education, and democratic participation — I care about making sure that as AI systems get more powerful, the people affected by them have a voice in how they're shaped.</p>
+  <p>I'm a junior in the Bay Area. My work sits at the intersection of AI safety research, public education, and democratic participation — I care about making sure that as AI systems get more powerful, the people affected by them have a voice in how they're shaped.</p>
   <p>Outside of research I compete in Lincoln-Douglas debate, take college-level CS and ML courses at Foothill College, and run two nonprofits. I think a lot about how technology changes what it means to be human — and what it means to govern well.</p>
 
   <hr class="divider" />
   <div class="section-label">Contact</div>
-  <p>Reach me at <a href="mailto:param.928@gmail.com">param.928@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/param-raval/" target="_blank">LinkedIn</a>.</p>
+  <p>Reach me at <a href="mailto:param.928@gmail.com">param.928@gmail.com</a> or find me on <a href="https://www.linkedin.com/in/param-raval-pr/" target="_blank">LinkedIn</a>.</p>
 
 </main>
 
@@ -98,7 +118,7 @@
       <div class="footer-name">Param Raval</div>
       <div class="footer-contact">
         <a href="mailto:param.928@gmail.com">param.928@gmail.com</a>
-        <a href="https://www.linkedin.com/in/param-raval/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/param-raval-pr/" target="_blank">LinkedIn</a>
       </div>
     </div>
     <div class="footer-right">
