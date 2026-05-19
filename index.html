@@ -7,25 +7,30 @@
   <link rel="stylesheet" href="style.css" />
   <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
   <style>
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr 350px;
-      gap: 3rem;
-      align-items: center;
-      padding: 5rem 0 2rem;
-    }
+    .hero-inner { padding: 5rem 0 2rem; text-align: center; }
     .hero-portrait {
-      width: 350px;
-      height: 350px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 12px;
+      width: 110px; height: 110px;
+      object-fit: cover; object-position: center top;
+      border-radius: 50%;
       border: 1px solid var(--border);
-      display: block;
+      display: block; margin: 0 auto 1.1rem;
+    }
+    .hero-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--text); margin-bottom: 0.4rem;
+    }
+    .hero-tagline {
+      font-size: 0.95rem; color: var(--accent);
+      letter-spacing: 0.02em; margin-bottom: 1.2rem;
+    }
+    .hero-body-text {
+      font-size: 1rem; line-height: 1.75;
+      color: var(--muted); max-width: 100%; margin: 0 auto 1.5rem;
     }
     @media (max-width: 640px) {
-      .hero-inner { grid-template-columns: 1fr; padding: 3rem 0 1.5rem; }
-      .hero-portrait { width: 200px; height: 200px; }
+      .hero-inner { padding: 3rem 0 1.5rem; }
+      .hero-portrait { width: 90px; height: 90px; }
     }
   </style>
 </head>
@@ -50,18 +55,13 @@
 <main>
 
   <section class="hero-inner">
-    <div>
-      <span class="eyebrow">Param Raval — Bay Area, CA</span>
-      <h1>AI safety researcher,<br><em>debater, community builder.</em></h1>
-      <div class="hero-body">
-        <p>I'm a junior at Archbishop Mitty High School working at the intersection of AI safety, democratic deliberation, and public education. I research how to make AI systems more transparent, aligned, and accountable — and I work to make sure those conversations reach people outside academia too.</p>
-        <p>Currently a researcher at Stanford, Cambridge, and UCSC — and the founder of The AI Compass, a nonprofit that has educated ~400 Bay Area residents on navigating AI safely.</p>
-      </div>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="research.html">See my research</a>
-      </div>
-    </div>
     <img src="param-portrait.jpg" alt="Param Raval" class="hero-portrait" />
+    <div class="hero-name">Param Raval</div>
+    <div class="hero-tagline">AI safety researcher &middot; debater &middot; community builder</div>
+    <p class="hero-body-text">I'm a junior at Archbishop Mitty High School working at the intersection of AI safety, democratic deliberation, and public education. I research how to make AI systems more transparent, aligned, and accountable — and I work to make sure those conversations reach people outside academia too. Currently a researcher at Stanford, Cambridge, and UCSC — and founder of The AI Compass, which has educated ~400 Bay Area residents on navigating AI safely.</p>
+    <div class="hero-links" style="justify-content:center;">
+      <a class="btn btn-primary" href="research.html">See my research</a>
+    </div>
   </section>
 
   <hr class="divider" />
