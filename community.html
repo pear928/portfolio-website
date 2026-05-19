@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Community — Param Raval</title>
   <link rel="stylesheet" href="style.css" />
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
 </head>
 <body>
 
@@ -18,6 +19,10 @@
     <li><a href="features.html">Features</a></li>
     <li><a href="awards.html">Awards</a></li>
   </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    <span class="toggle-sun">☀ Light</span>
+    <span class="toggle-moon">◑ Dark</span>
+  </button>
 </nav>
 
 <main>
@@ -102,5 +107,16 @@
   </div>
 </footer>
 
+<script>
+  (function(){
+    if(localStorage.getItem("theme")==="dark") document.documentElement.setAttribute("data-theme","dark");
+  })();
+  function toggleTheme(){
+    var d=document.documentElement;
+    var isDark=d.getAttribute("data-theme")==="dark";
+    d.setAttribute("data-theme", isDark ? "light" : "dark");
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+  }
+</script>
 </body>
 </html>
