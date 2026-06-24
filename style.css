@@ -127,7 +127,7 @@ main {
 .divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 2.5rem 0 1.5rem;
+  margin: 1.5rem 0 1.5rem;
 }
 
 /* ── SECTION LABEL (glowing subheader) ── */
@@ -149,6 +149,11 @@ main {
 .award-entry + .section-label,
 .entry + .section-label,
 .feature-entry + .section-label { margin-top: 2rem; }
+
+/* hide divider hr that follows an entry — entry already has border-bottom */
+.entry + .divider,
+.award-entry + .divider,
+.feature-entry + .divider { display: none; }
 
 /* ── HEADINGS ── */
 h1 {
@@ -269,7 +274,7 @@ a:hover { color: var(--accent-bright); }
 
 /* ── PAGE HEADER ── */
 .page-header {
-  padding: 3.5rem 0 2rem;
+  padding: 1.75rem 0 1.25rem;
   margin-bottom: 0;
 }
 .page-header p { max-width: 520px; margin-top: 0.6rem; }
