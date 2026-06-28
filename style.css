@@ -146,9 +146,9 @@ main {
 .page-header .section-label { margin-bottom: 0.4rem; }
 
 /* section-label after entries needs breathing room above */
-.award-entry + .section-label,
-.entry + .section-label,
-.feature-entry + .section-label { margin-top: 2.75rem; }
+.award-entry ~ .section-label,
+.entry ~ .section-label,
+.feature-entry ~ .section-label { margin-top: 2.75rem; }
 
 /* hide divider hr that follows an entry — entry already has border-bottom */
 .entry + .divider,
