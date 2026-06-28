@@ -148,7 +148,7 @@ main {
 /* section-label after entries needs breathing room above */
 .award-entry ~ .section-label,
 .entry ~ .section-label,
-.feature-entry ~ .section-label { margin-top: 2rem; }
+.feature-entry ~ .section-label { margin-top: 1.5rem; }
 
 /* hide divider hr that follows an entry — entry already has border-bottom */
 .entry + .divider,
