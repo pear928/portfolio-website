@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
 </head>
-
-<script src="gallery.js"></script>
-
 <body>
 
 <nav>
@@ -43,11 +40,11 @@
     <div class="entry-body">
       <h3>Undergraduate Excellence Award for Social Studies - AP United States History</h3>
       <p>The Undergraduate Excellence Award is given to top level scholars who demonstrate advanced critical thinking skills, and recipients are handpicked by subject level teachers. Less than 4 students from each undergraduate class of over 450 receive an award per subject.</p>
+      <div class="gallery">
+        <img class="gallery-thumb" src="images/undergrad_award_certificate.jpg" alt="Undergraduate Award Certificate" />
+      </div>
     </div>
     <div class="award-year">2025</div>
-    <div class="gallery">
-      <img class="gallery-thumb" src="images/undergrad_award_certificate.jpg" alt="Undergraduate Award Certificate" />
-</div>
   </div>
 
   <div class="award-entry">
@@ -67,7 +64,7 @@
     </div>
     <div class="award-year">2026</div>
   </div>
-  
+
   <div class="award-entry">
     <div class="entry-body">
       <h3>Ranked #2 in California - Lincoln-Douglas Debate</h3>
@@ -135,5 +132,6 @@
     localStorage.setItem("theme", isDark ? "light" : "dark");
   }
 </script>
+<script src="gallery.js"></script>
 </body>
 </html>
