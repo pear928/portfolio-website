@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Features — Param Raval</title>
+  <title>Media — Param Raval</title>
   <link rel="stylesheet" href="style.css" />
   <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
 </head>
@@ -16,7 +16,7 @@
     <li><a href="research.html">Research</a></li>
     <li><a href="experience.html">Experience</a></li>
     <li><a href="community.html">Community</a></li>
-    <li><a href="features.html">Media</a></li>
+    <li><a href="features.html" class="active">Media</a></li>
     <li><a href="awards.html">Awards</a></li>
   </ul>
   <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -28,31 +28,52 @@
 <main>
 
   <div class="page-header">
-    <div class="section-label">Features</div>
-    <h1>In the Press &amp; Media</h1>
-    <p>Interviews, articles, talks, and other appearances. More to come — check back soon.</p>
+    <div class="section-label">Media</div>
+    <h1>Press & Writing</h1>
+    <p>Interviews, features, and published writing.</p>
   </div>
 
   <hr class="divider" />
-  <div class="section-label">Press & Articles</div>
+  <div class="section-label">Press & Interviews</div>
 
-  <div class="feature-entry">
-    <div class="entry-date">Coming soon</div>
-    <div class="entry-body">
-      <h3>Add your press features here</h3>
-      <p>If you've been written about, quoted in an article, or featured anywhere — add it here with a link and a short description.</p>
-      </div>
+  <div class="media-grid">
+
+    <a class="media-card-link type-video" href="https://www.youtube.com/watch?v=wk47VAgo2yc" target="_blank">
+      <div class="media-card-type">&#9654; Video interview</div>
+      <div class="media-card-title"><em>How An 11th Grader Is Teaching Bay Area Youth to Use AI Responsibly</em></div>
+      <div class="media-card-outlet">Rooted by India Currents · 2025</div>
+    </a>
+
+    <a class="media-card-link type-press" href="https://indiacurrents.com/how-param-raval-is-teaching-bay-area-youth-to-use-ai-responsibly/" target="_blank">
+      <div class="media-card-type">&#9678; Press</div>
+      <div class="media-card-title"><em>How An 11th Grader Is Teaching Bay Area Youth to Use AI Responsibly</em></div>
+      <div class="media-card-outlet">India Currents · 2025</div>
+    </a>
+
   </div>
 
-  <hr class="divider" />
-  <div class="section-label">Speaking</div>
+  <div class="section-label">Published Writing</div>
 
-  <div class="feature-entry">
-    <div class="entry-date">Coming soon</div>
-    <div class="entry-body">
-      <h3>Add talks and panels here</h3>
-      <p>Any conferences, school events, community panels, or other speaking engagements go here.</p>
-      </div>
+  <div class="media-grid">
+
+    <a class="media-card-link type-writing" href="https://amhsnews.org/13746/science-technology/from-bartering-to-blockchain/" target="_blank">
+      <div class="media-card-type">&#9998; School newspaper</div>
+      <div class="media-card-title"><em>From Bartering to Blockchain</em></div>
+      <div class="media-card-outlet">The Monarch · Archbishop Mitty</div>
+    </a>
+
+    <a class="media-card-link type-writing" href="https://paramraval.substack.com/p/the-impact-of-agi-on-society" target="_blank">
+      <div class="media-card-type">&#9998; Essay</div>
+      <div class="media-card-title"><em>The Impact of AGI on Society</em></div>
+      <div class="media-card-outlet">The Accelerant · Substack</div>
+    </a>
+
+    <a class="media-card-link type-writing" href="https://paramraval.substack.com/p/while-ai-did-your-homework-you-missed" target="_blank">
+      <div class="media-card-type">&#9998; Essay</div>
+      <div class="media-card-title"><em>While AI Did Your Homework, You Missed Out on Something Bigger</em></div>
+      <div class="media-card-outlet">The Accelerant · Substack</div>
+    </a>
+
   </div>
 
 </main>
