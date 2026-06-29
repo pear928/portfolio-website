@@ -17,15 +17,15 @@
 
 /* ── DARK MODE (H2: parchment dusk + coral-orange) ── */
 [data-theme="dark"] {
-  --bg: #141210;
-  --bg-surface: #1c1916;
+  --bg: #1c1916;
+  --bg-surface: #232019;
   --border: #2a2520;
   --text: #f2ede4;
-  --muted: #80796f;
-  --accent: #e0834a;
-  --accent-bright: #eb9560;
-  --accent-glow: rgba(224, 131, 74, 0.45);
-  --link: #e0834a;
+  --muted: #7a736a;
+  --accent: #b8784a;
+  --accent-bright: #c98a5c;
+  --accent-glow: rgba(184, 120, 74, 0.18);
+  --link: #b8784a;
   --nav-bg: rgba(28, 25, 22, 0.92);
   --toggle-icon: "🌙";
 }
@@ -201,6 +201,7 @@ a:hover { color: var(--accent-bright); }
   white-space: nowrap;
 }
 
+.entry-body { min-width: 0; flex: 1; }
 .entry-body h3 { margin-bottom: 0.1rem; }
 
 /* ── TAGS ── */
@@ -392,10 +393,10 @@ footer {
 }
 
 .gallery-thumb {
-  width: 80px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   border: 1px solid var(--border);
   flex-shrink: 0;
