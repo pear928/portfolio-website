@@ -481,12 +481,36 @@ footer {
   white-space: nowrap;
 }
 
+.media-card-link,
+.media-card-link:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.media-card-link .media-card-type {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.media-card-link .media-card-title {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.media-card-link .media-card-outlet {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.media-card-link:hover .media-card-title {
+  color: var(--accent-bright);
+}
 /* ── MEDIA CARDS ── */
 .media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .media-card-link {
@@ -495,15 +519,14 @@ footer {
   border: 0.5px solid var(--border);
   border-left-width: 3px;
   border-radius: 8px;
-  padding: 14px 16px;
-  cursor: pointer;
+  padding: 16px 18px;
   text-decoration: none !important;
-  color: var(--text) !important;
-  transition: opacity 0.15s;
+  color: inherit !important;
+  transition: background 0.15s;
 }
 
 .media-card-link:hover {
-  opacity: 0.8;
+  background: var(--bg);
   text-decoration: none !important;
 }
 
@@ -512,21 +535,21 @@ footer {
 .media-card-link.type-writing { border-left-color: #c9a84c; }
 
 .media-card-type {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
   color: var(--muted) !important;
-  margin-bottom: 5px;
+  margin-bottom: 0.4rem !important;
   text-decoration: none !important;
 }
 
 .media-card-title {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
   color: var(--text) !important;
-  line-height: 1.4;
-  margin-bottom: 4px;
+  line-height: 1.4 !important;
+  margin-bottom: 0.4rem !important;
   text-decoration: none !important;
 }
 
@@ -534,10 +557,19 @@ footer {
   color: var(--accent-bright) !important;
 }
 
+.media-card-desc {
+  font-size: 0.8rem !important;
+  color: var(--muted) !important;
+  line-height: 1.55 !important;
+  margin-bottom: 0.5rem !important;
+  text-decoration: none !important;
+}
+
 .media-card-outlet {
-  font-size: 0.78rem;
+  font-size: 0.72rem !important;
   color: var(--muted) !important;
   text-decoration: none !important;
+  opacity: 0.75;
 }
 
 @media (max-width: 640px) {
