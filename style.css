@@ -540,7 +540,6 @@ footer {
 
 .media-card-desc {
   font-size: 0.78rem !important;
-  font-style: italic !important;
   color: var(--muted) !important;
   line-height: 1.55 !important;
   margin-bottom: 0.5rem !important;
