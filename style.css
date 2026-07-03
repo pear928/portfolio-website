@@ -481,6 +481,30 @@ footer {
   white-space: nowrap;
 }
 
+.media-card-link,
+.media-card-link:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.media-card-link .media-card-type {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.media-card-link .media-card-title {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.media-card-link .media-card-outlet {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.media-card-link:hover .media-card-title {
+  color: var(--accent-bright);
+}
 /* ── MEDIA CARDS ── */
 .media-grid {
   display: grid;
@@ -506,9 +530,9 @@ footer {
   text-decoration: none !important;
 }
 
-.media-card-link.type-video { border-left-color: #6fa8dc; }
-.media-card-link.type-press { border-left-color: #6aaa7a; }
-.media-card-link.type-writing { border-left-color: #c9a84c; }
+.media-card-link.type-video { border-left-color: var(--accent); }
+.media-card-link.type-press { border-left-color: var(--accent); }
+.media-card-link.type-writing { border-left-color: var(--accent); }
 
 .media-card-type {
   font-size: 0.7rem !important;
@@ -521,17 +545,12 @@ footer {
 }
 
 .media-card-title {
-  font-size: 0.92rem !important;
-  font-weight: 600 !important;
-  font-style: normal !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
   color: var(--text) !important;
   line-height: 1.4 !important;
   margin-bottom: 0.4rem !important;
   text-decoration: none !important;
-}
-
-.media-card-title em {
-  font-style: normal !important;
 }
 
 .media-card-link:hover .media-card-title {
@@ -539,12 +558,11 @@ footer {
 }
 
 .media-card-desc {
-  font-size: 0.78rem !important;
+  font-size: 0.8rem !important;
   color: var(--muted) !important;
   line-height: 1.55 !important;
   margin-bottom: 0.5rem !important;
   text-decoration: none !important;
-  opacity: 0.72;
 }
 
 .media-card-outlet {
@@ -554,11 +572,28 @@ footer {
   opacity: 0.75;
 }
 
+@media (max-width: 640px) {
+  .media-grid { grid-template-columns: 1fr; }
+}
+
+/* ── MEDIA CARD TITLE / DESC EMPHASIS FLIP ── */
+.media-card-title {
+  font-weight: 600 !important;
+  font-style: normal !important;
+  font-size: 0.92rem !important;
+}
+
+.media-card-title em {
+  font-style: normal !important;
+}
+
+.media-card-desc {
+  font-style: italic !important;
+  font-size: 0.78rem !important;
+  opacity: 0.72;
+}
+
 /* extra breathing room before 3rd card in a grid row */
 .media-grid .media-card-link:nth-child(3) {
   margin-top: 0.75rem;
-}
-
-@media (max-width: 640px) {
-  .media-grid { grid-template-columns: 1fr; }
 }
