@@ -364,7 +364,7 @@ footer {
 }
 .footer-right .social-links a:hover { color: var(--accent-bright); }
 
-.footer-copy { font-size: 0.75rem; color: var(--border); }
+.footer-copy { font-size: 0.75rem; color: var(--muted); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
