@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills — Param Raval</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Param Raval</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skills.html" class="active">Skills</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="features.html">Media</a></li>
+    <li><a href="awards.html">Awards</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    <span class="toggle-sun">☀ Light</span>
+    <span class="toggle-moon">◑ Dark</span>
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <div class="section-label">Technical Skills</div>
+    <h1>Programming Projects & Skills</h1>
+  </div>
+
+  <hr class="divider" />
+  <div class="section-label">Programming Projects</div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Project Title</h3>
+      <p>Description of the project — what it does, what technologies you used, and what you built or learned.</p>
+    </div>
+    <div class="award-year">2025</div>
+  </div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Project Title</h3>
+      <p>Description of the project — what it does, what technologies you used, and what you built or learned.</p>
+    </div>
+    <div class="award-year">2025</div>
+  </div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Project Title</h3>
+      <p>Description of the project — what it does, what technologies you used, and what you built or learned.</p>
+    </div>
+    <div class="award-year">2025</div>
+  </div>
+
+  <div class="section-label">Skills</div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Skill Category (e.g. Programming Languages)</h3>
+      <p>Python, JavaScript, HTML/CSS, etc.</p>
+    </div>
+    <div class="award-year"></div>
+  </div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Skill Category (e.g. Frameworks & Tools)</h3>
+      <p>React, Git, etc.</p>
+    </div>
+    <div class="award-year"></div>
+  </div>
+
+  <div class="award-entry">
+    <div class="entry-body">
+      <h3>Skill Category (e.g. Concepts)</h3>
+      <p>Machine learning, NLP, etc.</p>
+    </div>
+    <div class="award-year"></div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">Param Raval</div>
+      <div class="footer-contact">
+        <a href="mailto:param.928@gmail.com">param.928@gmail.com</a>
+        <a href="https://www.linkedin.com/in/param-raval-pr/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="social-links">
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="community.html">Community</a>
+        <a href="features.html">Media</a>
+        <a href="awards.html">Awards</a>
+      </div>
+      <div class="footer-copy">© 2026 Param Raval</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    if(localStorage.getItem("theme")==="dark") document.documentElement.setAttribute("data-theme","dark");
+    else document.documentElement.setAttribute("data-theme","light");
+  })();
+  function toggleTheme(){
+    var d=document.documentElement;
+    var isDark=d.getAttribute("data-theme")==="dark";
+    d.setAttribute("data-theme", isDark ? "light" : "dark");
+    localStorage.setItem("theme", isDark ? "light" : "dark");
+  }
+</script>
+<script src="gallery.js"></script>
+</body>
+</html>
